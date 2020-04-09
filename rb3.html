@@ -1,0 +1,219 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="2.css">
+<style>
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+	margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;}
+table {
+    font-family: verdana, sans-serif;
+    width: 100%;
+}
+td, th {
+    border: 1px solid white;
+    text-align: center;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: silver;
+}
+</style>
+<script>
+image=new Array();
+image[0]="images/brands/rb/3.jpg";
+image[1]="images/brands/rb/rb3-1.jpg";
+image[2]="images/brands/rb/rb3-2.jpg";
+image[3]="images/brands/rb/rb3-3.jpg";
+image[4]="images/brands/rb/rb3-4.jpg";
+image[5]="images/brands/rb/rb3-5.jpg";
+x=0;
+setTimeout("ig()",1000);
+function ig()
+{
+var img=document.getElementById("i1");
+img.src=image[x];
+if(x<(image.length-1))
+{
+	x++;
+}
+else
+{
+	x=0;
+}
+setTimeout("ig()",1000);
+}
+</script>
+</head>
+<body bgcolor="White">
+<img src="images/logo.png" height="110" width="300" align="left"/>
+<form>
+    <div align="right"><button class="button button1"><a href="login.html">Login</a></button>
+	<button class="button button2"><a href="reg.html">Register</a></button></div>
+<pre>                     <input  type="text" name="search" placeholder="Serach....">  <button class="button button3">Search</button></pre>
+</form>
+<hr></hr>
+<ul style="background-color: black;">
+  <li><a href="home.html">HOME</a></li>
+
+    <li class="dropdown">
+    <a  class="dropbtn">BRAND</a>
+    <div class="dropdown-content">
+      <a href="vincent-chase.html">Vincent Chase</a>
+      <a href="ray-ban.html">Ray-Ban</a>
+      <a href="nike.html">Nike</a>
+      <a href="carrera.html">Carrera</a>
+	  <a href="vogue.html">Vogue</a>
+   </div>
+   </li>
+  <li class="dropdown">
+  <a  class="dropbtn">MEN</a>
+  <div class="dropdown-content">
+      <a href="men-sunglasses.html">Sunglasses</a>
+      <a href="men-eyeglasses.html">Eyeglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">WOMEN</a>
+  <div class="dropdown-content">
+      <a href="women-eyeglasses.html">Eyeglasses</a>
+	  <a href="women-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+    <li class="dropdown">
+  <a  class="dropbtn">KIDS</a>
+  <div class="dropdown-content">
+      <a href="kids-eyeglasses.html">Eyeglasses</a>
+      <a href="kids-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">COLLECTIONS</a>
+  <div class="dropdown-content">
+      <a href="sports-eyewear.html">Sports eyewear</a>
+      <a href="reading.html">Reading glasses</a>
+      <a href="new.html">New Launches</a>
+  </div>
+  </li>
+    <li class="dropdown">
+  <a  class="dropbtn">TRY@HOME</a>
+    <div class="dropdown-content">
+    <a href="try.html"><img src="images\eyetest\1.png" alt="eyetest" width="400" height="300"></a>
+		</li>
+  </ul>
+  <hr></hr>
+</head>
+<body>
+<br>
+<style>
+div.img {
+    margin: 5px;
+    border: 1px solid gray;
+    float: left;
+	width: 37%;
+    height: 48%;
+}
+
+div.img:hover {
+    border: 1px solid black;
+}
+
+div.img img {
+	width: 100%;
+    height: 100%;
+}
+</style>
+<div class="img">
+        <img src="images/brands/rb/3.jpg" id="i1"/>   
+</div>
+<span align="center" style="background-color:lightgreen; padding:10px 20px; margin-left:20%">
+<font color="white">RX6271I GUNMETAL BLACK 2502 EYEGLASSES</font></span>
+<br>
+<div align="right" style="background-color:lightblue; font-family:verdana; line-height:50px; margin-right:24%; margin-left:69%;">
+<span>
+<h4>Rs 4,581</h4> 
+</span>
+</div>
+<div align="center">
+<button onclick="myFunction()" style="background-color:white; padding: 5px 8px; margin-left:10%;">
+<img src="images/add.jpg" alt="addtocart" width="250px" height="65px">
+</button>
+<script>
+function myFunction() 
+{
+    alert("The product was added sucussfully to your shopping cart");
+}
+</script>
+</div>
+<br>
+<pre><font color="darkcyan" size="4" face="verdana"><b>          CHECK DELIVERY OPTIONS</b></font></pre>
+<center><input type="text" name="pincode" placeholder="Enter pincode to check">  <input type="submit" value="Check"></center>
+<br>
+<table align="left" style="width:100%" border="1">
+<tr bgcolor="gray">
+<th colspan="2">Product Description</th>
+</tr>
+<tr>
+<td>Brand Name</td>
+<td>Ray-Ban</td>
+</tr>
+<tr>
+<td>Product Type</td>
+<td>Eyeglasses</td>
+</tr>
+<tr>
+<td>Frame Type</td>
+<td>Half Rim</td>
+</tr><tr>
+<td>Frame Shape</td>
+<td>Rectangle</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>Unisex</td>
+</tr>
+<tr>
+<td>Model No.</td>
+<td>RX6271I 2502</td>
+</tr>
+<tr>
+<td>Frame Size</td>
+<td>Medium</td>
+</tr><tr>
+<td>Frame colour</td>
+<td>Gunmetal</td>
+</tr><tr>
+<td>Glass Colour</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Height</td>
+<td>28 mm</td>
+</tr><tr>
+<td>Weight</td>
+<td>24.2 gm</td>
+</tr><tr>
+<td>Weight Group</td>
+<td>Average</td>
+</tr>
+<tr>
+<td>Collection</td>
+<td>No</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

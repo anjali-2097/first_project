@@ -1,0 +1,132 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="2.css">
+<style>
+input[type=text],[type=password], [type=email]{
+    width: 50%;
+    padding: 12px 20px;
+	margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type=submit],input[type=reset] {
+	
+    width:25%;
+    background-color:green;
+    color:white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+	}
+</style>
+<script>
+function validateForm()
+{
+var pass1=document.getElementById('pwd').value;
+var pass2=document.getElementById('cpwd').value;
+if(pass1!=pass2)
+{
+alert("Passwords do not Match!!")
+}
+var chk=document.getElementById('tc').checked;
+if(chk!=true)
+{
+alert("Agree all the terms and conditions!!!")
+
+}
+}
+</script>
+</head>
+<body bgcolor="White">
+<img src="images/logo.png" height="110" width="300" align="left"/>
+<form>
+    <div align="right"><button class="button button1"><a href="login.html">Login</a></button>
+	<button class="button button2"><a href="reg.html">Register</a></button></div>
+<pre>                     <input  type="text" name="search" placeholder="Search....">  <button class="button button3">Search</button></pre>
+</form>
+<hr></hr>
+<ul style="background-color: black;">
+  <li><a href="home.html">HOME</a></li>
+  <li class="dropdown">
+    <a  class="dropbtn">BRAND</a>
+    <div class="dropdown-content">
+      <a href="vincent-chase.html">Vincent Chase</a>
+      <a href="ray-ban.html">Ray-Ban</a>
+      <a href="nike.html">Nike</a>
+      <a href="carrera.html">Carrera</a>
+	  <a href="vogue.html">Vogue</a>
+   </div>
+   </li>
+  <li class="dropdown">
+  <a  class="dropbtn">MEN</a>
+  <div class="dropdown-content">
+      <a href="men-sunglasses.html">Sunglasses</a>
+      <a href="men-eyeglasses.html">Eyeglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">WOMEN</a>
+  <div class="dropdown-content">
+      <a href="women-eyeglasses.html">Eyeglasses</a>
+	  <a href="women-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+    <li class="dropdown">
+  <a  class="dropbtn">KIDS</a>
+  <div class="dropdown-content">
+      <a href="kids-eyeglasses.html">Eyeglasses</a>
+      <a href="kids-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">COLLECTIONS</a>
+  <div class="dropdown-content">
+      <a href="sports-eyewear.html">Sports eyewear</a>
+      <a href="reading.html">Reading glasses</a>
+      <a href="new.html">New Launches</a>
+  </div>
+  </li>
+    <li class="dropdown">
+  <a  class="dropbtn">TRY@HOME</a>
+    <div class="dropdown-content">
+    <a href="try.html"><img src="images\eyetest\1.png" alt="eyetest" width="400" height="300"></a>
+		</li>
+  </ul>
+  <hr></hr>
+</head>
+<body>
+<div style="
+    background-color: lightpink;
+    width: 98%;
+    border: solid black 2px;
+    padding: 10px;">
+<form method="POST" action="reg.html" onsubmit="return validateForm()">
+
+  <img align="right" src="images/reg.jpg"  width="635" height="365" border=2>
+  
+	<input align="right" type="text" name="name" placeholder="Enter your name" required="required"><br>
+
+<input type="text" name="mobile" placeholder="Enter your Mobile Nummber" maxlength="10" pattern="[789][0-9]{9}" required="required"><br>
+
+	<input type="email" name="e-mail" placeholder="Enter your email" required="required"><br>
+
+   <input type="password" name="pass" id="pwd" placeholder="Enter your password" required="required"><br>
+
+	<input type="password" name="cpass" id="cpwd" placeholder="Re-enter password" required="required"><br>
+	
+	<input type="checkbox" id="tc" name="check"><font color="darkcyan" face="Arial">Terms & Conditions</font><br>
+	
+    <input type="submit" value="Register">
+	
+	<input type="reset" value="Reset">
+
+	
+  </form>
+</div>
+</body>
+</html>

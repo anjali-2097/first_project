@@ -1,0 +1,137 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="2.css">
+<script src="image.js"></script>
+
+<style>
+input[type=text], [type=email],textarea {
+    width: 50%;
+    padding: 12px 20px;
+	margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+	border-radius: 4px;
+}
+
+input[type=submit] {
+    background-color: green;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+</style>
+</head>
+<body bgcolor="white">
+<img src="images\logo.png" height="110" width="300" align="left"/>
+<form>
+    <div align="right"><button class="button button1"><a href="login.html">Login</a></button>
+	<button class="button button2"><a href="reg.html">Register</a></button></div>
+
+<pre>                     <input  type="text" name="search" placeholder="Search....">  <button class="button button3">Search</button></pre>
+</form>
+<hr></hr>
+<ul style="background-color: black;">
+  <li><a href="home.html">HOME</a></li>
+
+  <li class="dropdown">
+    <a  class="dropbtn">BRAND</a>
+    <div class="dropdown-content">
+      <a href="vincent-chase.html">Vincent Chase</a>
+      <a href="ray-ban.html">Ray-Ban</a>
+      <a href="nike.html">Nike</a>
+      <a href="carrera.html">Carrera</a>
+	  <a href="vogue.html">Vogue</a>
+   </div>
+   </li>
+  <li class="dropdown">
+  <a  class="dropbtn">MEN</a>
+  <div class="dropdown-content">
+      <a href="men-sunglasses.html">Sunglasses</a>
+      <a href="men-eyeglasses.html">Eyeglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">WOMEN</a>
+  <div class="dropdown-content">
+      <a href="women-eyeglasses.html">Eyeglasses</a>
+	  <a href="women-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+    <li class="dropdown">
+  <a  class="dropbtn">KIDS</a>
+  <div class="dropdown-content">
+      <a href="kids-eyeglasses.html">Eyeglasses</a>
+      <a href="kids-sunglasses.html">Sunglasses</a>
+  </div>
+  </li>
+  
+  <li class="dropdown">
+  <a  class="dropbtn">COLLECTIONS</a>
+  <div class="dropdown-content">
+      <a href="sports-eyewear.html">Sports eyewear</a>
+      <a href="reading.html">Reading glasses</a>
+      <a href="new.html">New Launches</a>
+  </div>
+  </li>
+    <li class="dropdown">
+  <a  class="dropbtn">TRY@HOME</a>
+    <div class="dropdown-content">
+    <a href="try.html"><img src="images\eyetest\1.png" alt="eyetest" width="400" height="300"></a>
+		</li>
+  </ul>
+  <hr></hr>
+</head>
+<script>
+image=new Array();
+image[0]="images/1.jpg";
+image[1]="images/2.jpg";
+image[2]="images/3.jpg";
+image[3]="images/4.jpg";
+x=0;
+setTimeout("ig()",1000);
+function ig()
+{
+var img=document.getElementById("i1");
+img.src=image[x];
+if(x<(image.length-1))
+{
+	x++;
+}
+else
+{
+	x=0;
+}
+setTimeout("ig()",1000);
+}
+</script>
+<img src="images/1.jpg" height="450" width="100%" id="i1"/>
+<br><br>
+	
+<form method="POST" action="#">  
+
+<div style="
+    background-color: lightgreen;
+    width: 99%;
+    padding: 10px;">
+	
+<h2><font color="darkcyan" face="verdana">Follow Us</font></h2>
+<a href="https://www.facebook.com/NetMeds"><img src="images/fb.png"height="35" width="35"></a> 
+<a href="https://www.facebook.com/NetMeds"><img src="images/twitter.png"height="35" width="35"></a> 
+<a href="https://plus.google.com/+Netmeds"><img src="images/gplus.png"height="35" width="35"></a> 
+<br><br>
+       	<font color="darkcyan" size="5" face="verdana"><b>Write your review</b></font><br>
+
+    <input type="text" id="fname" name="firstname" placeholder="Enter your name"><br>
+
+    <input type="email" id="email" name="email" placeholder="Enter your email" required="required"><br>
+     
+    <textarea id="subject" name="subject" placeholder="Write a review" style="height:150px"></textarea><br>
+
+    <input type="submit" value="Submit">
+	</div>
+  </form>
+
+</body>
+</html>
